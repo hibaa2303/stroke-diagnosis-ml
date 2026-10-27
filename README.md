@@ -1,54 +1,80 @@
-Stroke Diagnosis using Machine Learning
+# 🧠 Stroke Diagnosis Using Machine Learning
 
-Description:
+A machine learning project focused on stroke diagnosis using neuroimaging data and patient health indicators. It explores data preprocessing, model development, and evaluation through machine learning techniques.
 
-A machine learning-based system for predicting strokes from neuroimaging data and patient health indicators. This project aims to assist early stroke detection to improve medical response time and accuracy.
+## ✨ Features
 
-Project Objectives:
+- Data preprocessing and feature engineering
+- Machine learning model development and evaluation
+- Analysis of stroke-related data
+- Streamlit-based application interface
 
-* Detect stroke presence using image and structured data.
-* Apply preprocessing, feature engineering, and model training.
-* Evaluate models and interpret results with visualizations.
+## 🛠️ Technologies Used
 
+- Python 3.11
+- NumPy and Pandas
+- Scikit-learn
+- PyTorch and Torchvision
+- Matplotlib and Seaborn
+- Streamlit
+- Jupyter Notebook
 
-Technologies Used:
+## 📁 Project Structure
 
-* Python 3.10
-* Scikit-learn
-* TensorFlow / PyTorch 
-* NumPy, Pandas
-* Matplotlib, Seaborn
+- `app.py` — Streamlit application
+- `src/` — Source code and helper modules
+- `model_pkl/` — Saved model files
+- `dataset/` — Dataset files, if included
+- `images/` — Project images
+- `requirements.txt` — Python dependencies
 
-Folder Structure:
+## 🚀 Setup and Run
 
-stroke-diagnosis-ml/
-\|-- data/                -> Raw or preprocessed data
-\|-- models/              -> Trained model files
-\|-- src/                 -> Core Python scripts
-\|-- utils/               -> Helper functions/utilities
-\|-- requirements.txt     -> Python dependencies
-\|-- README.md            -> Project overview
+### 1. Clone the repository
 
-Setup Instructions:
+```bash
+git clone https://github.com/hibaa2303/stroke-diagnosis-ml.git
+cd stroke-diagnosis-ml
+```
 
-1. Clone the Repository
-   git clone [https://github.com/hibaa2303/stroke-diagnosis-ml.git](https://github.com/hibaa2303/stroke-diagnosis-ml.git)
-   cd stroke-diagnosis-ml
+### 2. Create a virtual environment
 
-2. Create a Virtual Environment
-   python3 -m venv venv
-   source venv/bin/activate   (on macOS/Linux)
+Python 3.11 is recommended.
 
-3. Install Dependencies
-   pip install -r requirements.txt
+```bash
+python3.11 -m venv venv311
+```
 
+### 3. Activate the environment
 
+**macOS / Linux**
 
-Model Overview:
+```bash
+source venv311/bin/activate
+```
 
-* Uses patient health features like age, glucose, BMI, etc.
-* Preprocessing includes missing value handling and normalization
-* Models used: Logistic Regression, Random Forest, SVM
-* Evaluation metrics: Accuracy, Precision, Recall, F1-score
+### 4. Install dependencies
 
+```bash
+python -m pip install -r requirements.txt
+```
 
+### 5. Run the application
+
+```bash
+python -m streamlit run app.py --server.fileWatcherType none
+```
+
+Open the local URL displayed in the terminal to access the application.
+
+## 📝 Notes
+
+- Ensure the required model files are available in `model_pkl/`.
+- Dataset availability may depend on the files included in the repository.
+- Dependency compatibility may vary by operating system.
+
+## 👩‍💻 Author
+
+**Hiba Aayesha**
+
+GitHub: [hibaa2303](https://github.com/hibaa2303)
